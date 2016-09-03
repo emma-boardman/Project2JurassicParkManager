@@ -1,8 +1,14 @@
-// package dinosaur_management;
+package dinosaur_management;
 
-// public abstract class SimpleDinosaurLab {
 
-// public Dinosaur createDinosaur(String species) {Dinosaur dinosaur = null;
+public abstract class SimpleDinosaurLab {
+
+protected abstract Dinosaur createDinosaur(String species) {
+  Dinosaur dinosaur = createDinosaur(species);
+  
+
+
+}
 
 // if (species.equals("dino1")){
 //   dinosaur = new Dino1();

@@ -1,8 +1,18 @@
-// package dinosaur_management;
+package dinosaur_management;
 
-// public class DinosaurManagement {
+public class DinosaurManagement {
 
-//   SimpleDinosaurLab lab; 
+SimpleDinosaurLab createDinosaur = new SpeciesOfDinosaurLab();
+
+Dinosaur tRex = createDinosaur.orderDinosaur("Trex");
+System.out.println(tRex + "\n");
+
+Dinosaur stegosaurus = createDinosaur.orderDinosaur("Stegosaurus");
+System.out.println(stegosaurus + "\n");
+
+}
+
+
 
 //   public DinosaurManagement(SimpleDinosaurLab lab) {
 //     this.lab = lab;
