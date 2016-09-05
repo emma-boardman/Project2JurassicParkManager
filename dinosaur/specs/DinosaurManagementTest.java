@@ -11,8 +11,9 @@ DinosaurFactory dinosaurFactory;
 @Test
 public void canCreateNewDinosaur(){
   Dinosaur dinosaur = dinosaurFactory.createDinosaur("Trex");
-  AssertEquals("RAWR.", dinosaur.makeNoise);
+  assertEquals("RAWR.", dinosaur.makeNoise());
 }
+
 }
 
 
