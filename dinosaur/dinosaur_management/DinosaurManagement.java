@@ -1,19 +1,47 @@
 package dinosaur_management;
+import behaviours.*;
+
+
 
 public class DinosaurManagement {
-// this is where new dinosaurs are ordered. manager would somehow have access to these methods, and be able to input which dinosaur they wanted to create.
+// // this is where new dinosaurs are ordered. manager would somehow have access to these methods, and be able to input which dinosaur they wanted to create.
 
-SimpleDinosaurLab createDinosaur = new SpeciesOfDinosaurLab();
-// instantiates the simple lab 
+// if i added an if statement in this file, this code would have to be modified everytime a new species of dinosaur was introduced. that would be bad.
+
+DinosaurFactory dinosaurFactory;
+// this gives the management class a reference to the factory
 
 
-Dinosaur tRex = createDinosaur.orderDinosaur("Trex");
-System.out.println(tRex + "\n");
+public DinosaurManagement(DinosaurFactory dinosaurFactory){
+    this.dinosaurFactory= dinosaurFactory);
+  }     
+  // this passes the factory into the constructor
 
-// calls the orderDinosaur method on the lab, and specifies the species 
+public Dinosaur addDinosaur(String species){
+  Dinosaur dinosaur;
+  dinosaur = dinosaurFactory.createDinosaur(species);
+  return dinosaur;
+}
+// by replacing the new operator with the crate method, avoids concrete instatiations in this class. 
 
-Dinosaur stegosaurus = createDinosaur.orderDinosaur("Stegosaurus");
-System.out.println(stegosaurus + "\n");
+
+
+
+//   method to add a dinosaur to the zoo
+// }
+
+  // method to view all current dinosaurs 
+
+  // method to view all current enclosures 
+
+  // method to add the dinosaur to an enclosure
+
+  // method to move the dinosaur between enclosures 
+
+  // method to tranquilise dinosaur
+
+
+
+
 
 }
-

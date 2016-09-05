@@ -7,6 +7,7 @@ public Stegosaurus() {
   super();
   noiseBehaviour = new Grunt();
   eatingBehaviour = new ChaseWithStones();
+  // requiredSpaceInMetres = 20;
 }
  
 

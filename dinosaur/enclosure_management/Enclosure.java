@@ -1,4 +1,4 @@
-package enclosure;
+package enclosure_management;
 import behaviours.*;
 import dinosaur_management.*;
 import java.util.*;
@@ -8,6 +8,7 @@ public class Enclosure {
 String name;
 int sizeInMetres; 
 ArrayList<Enclosable> enclosure_contents;
+
 
 public Enclosure(String name, int sizeInMetres){
   this.name = name;
@@ -22,7 +23,7 @@ public String getName(){
 }
 
 public int enclosureContentsCount(){
-  enclosure_contents.size();
+  return enclosure_contents.size();
 }
 
 public void contentsAdd(Enclosable enclosable){enclosure_contents.add(enclosable);
@@ -32,9 +33,9 @@ public void contentsClear() {
   enclosure_contents.clear();
 }
 
-public Card contentsRemove(Enclosable enclosable) {
+public Enclosable contentsRemove(Enclosable enclosable) {
   if (enclosure_contents.remove(enclosable)) {
-     return card;
+     return enclosable;
   }
   return null;
 
