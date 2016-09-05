@@ -6,22 +6,23 @@ import behaviours.*;
 
 public class DinosaurManagementTest {
 
-DinosaurFactory dinosaurFactory;
+// DinosaurFactory dinosaurFactory;
+// Dinosaur dinosaur;
 
 @Test
 public void canCreateNewDinosaur(){
+  DinosaurFactory dinosaurFactory = new DinosaurFactory();
   Dinosaur dinosaur = dinosaurFactory.createDinosaur("Trex");
+
+  // TRex original = (TRex) dinosaur;
+  // assertEquals("RAWR.", original.makeNoise());
+
   assertEquals("RAWR.", dinosaur.makeNoise());
+  // assertEquals("RAWR.", dinosaur.noise());
+  
 }
 
+// if the compile thinks that the variable is a Dinosaur, it can only do what the dinosaur can do.
+// casting gives us access to all the methods on the type
 }
 
-
-// Dinosaur tRex = createDinosaur.orderDinosaur("Trex");
-// System.out.println(tRex);
-// // assert
-
-// // calls the orderDinosaur method on the lab, and specifies the species 
-
-// Dinosaur stegosaurus = createDinosaur.orderDinosaur("Stegosaurus");
-// System.out.println(stegosaurus);

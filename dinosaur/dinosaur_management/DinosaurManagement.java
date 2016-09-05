@@ -9,11 +9,16 @@ public class DinosaurManagement {
 // if i added an if statement in this file, this code would have to be modified everytime a new species of dinosaur was introduced. that would be bad.
 
 DinosaurFactory dinosaurFactory;
-// this gives the management class a reference to the factory
+ArrayList<Enclosure> enclosures;
+ArrayList<Dinosaur> holdingPen;
+
+
 
 
 public DinosaurManagement(DinosaurFactory dinosaurFactory){
     this.dinosaurFactory= dinosaurFactory;
+    this.encloures = new ArrayList<Enclosure>;
+    this.holdingPen = new ArrayList<Dinosaur>;
   }     
   // this passes the factory into the constructor
 
@@ -22,6 +27,8 @@ public Dinosaur addDinosaur(String species){
   dinosaur = dinosaurFactory.createDinosaur(species);
   return dinosaur;
 }
+
+
 // by replacing the new operator with the crate method, avoids concrete instatiations in this class. 
 
 

@@ -15,8 +15,8 @@ public Dinosaur createDinosaur(String species){
    else if(species.equals("Stegosaurus")){
      dinosaur = new Stegosaurus();
   }
-  return dinosaur;
 
+  return dinosaur;
   }
 
 }
