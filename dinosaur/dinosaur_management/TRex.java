@@ -3,7 +3,7 @@ import behaviours.*;
 
 public class TRex extends Dinosaur {
 
-public TRex() {
+public TRex(){
   super();
   noiseBehaviour = new Roar();
   eatingBehaviour = new SwallowWhole();

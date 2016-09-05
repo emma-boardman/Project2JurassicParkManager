@@ -1,57 +1,60 @@
 import static org.junit.Assert.*;
 import org.junit.*;
-import player.*;
-import deck.*;
+import enclosure_management.*;
+import dinosaur_management.*;
 
-public class PlayerTest {
+public class EnclosureTest {
 
-  Player player;
-  Card card;
+  Enclosure enclosureOne;
+  Enclosure enclosureTwo;
+  Trex trexOne;
+  Trex trexTwo;
 
   @Before
   public void before(){
-    player = new Player("Player 1");
-    card = new Card(SuitType.DIAMONDS, ValueType.THREE);
-
+    enclosureOne = new Enclosure("Enclosure 1");
+    trexOne= new Trex();
   }
 
 @Test
 public void canGetName(){
- assertEquals("Player 1", player.getName());
+ assertEquals("Enclosure 1", enclosureOne.getName());
 }
 
 @Test
-public void startsWithEmptyHand() {
-  assertEquals(0, player.handCount());
+public void startsWithEmptyEnclosure() {
+  assertEquals(0, enclosureOne.enclosureContentsCount());
 }
 
 @Test
-public void canAddCardtoHand() {
-  player.handAdd(card);
-  assertEquals(1, player.handCount());
+public void canAddcontents() {
+  enclosureOne.contentsAdd(trexOne);
+  assertEquals(1, enclosureOne.enclosureContentsCount());
 }
 
 @Test
-public void clearHand() {
-  player.handAdd(card);
-  assertEquals(1, player.handCount());
-  player.handClear();
-  assertEquals(0, player.handCount());
+public void canKillAllContents() {
+ enclosureOne.contentsAdd(trexOne);
+ assertEquals(1, enclosureOne.enclosureContentsCount());
+  enclosureOne.contentsClear();
+  assertEquals(0, enclosureOne.enclosureContentsCount());
 }
 
 @Test
-public void canRemoveCardfromHand(){
-  player.handAdd(card);
-  assertEquals(1, player.handCount());
-  player.handRemove(card);
-  assertEquals(0, player.handCount());
-}
+public void canRemoveContentsfromEnclosure(){
+   enclosureOne.contentsAdd(trexOne);
+   assertEquals(1, enclosureOne.enclosureContentsCount());
+    enclosureOne.contentsRemove();
+    assertEquals(0, enclosureOne.enclosureContentsCount());
+  }
 
 @Test
-public void canReturnCardOnRemove(){
-  player.handAdd(card);
-  Card returnedCard = player.handRemove(card);
-  assertEquals(SuitType.DIAMONDS, returnedCard.getSuit());
+public void canReturnContentsOnRemove(){
+  enclosureOne.contentsAdd(trexOne);
+  Trex returnedTRex = enclosureOne.contentsRemove(trexOne);
+  assertEquals("RAWR.", returnedTRex.makeNoise());
 }
+
+// in enclosure management, create a holding pen, and test whether the dinosaur can be put in it. 
 
 }

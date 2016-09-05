@@ -3,9 +3,14 @@ import behaviours.*;
 
 public class Dinosaur implements Enclosable{
 
+  // public String dinosaurName;
   public NoiseBehaviour noiseBehaviour;
   public EatingBehaviour eatingBehaviour;
   // dinosaur doesn't care what noise is, just knows it's available to all it's subclasses 
+
+  // public String getName(){
+  //   return this.name
+  // }
 
   public String makeNoise(){
     return noiseBehaviour.noise();
