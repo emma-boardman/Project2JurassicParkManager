@@ -26,7 +26,16 @@ public void addToHoldingPen(Dinosaur dinosaur){
   holdingPen.add(dinosaur);
 }
 
+// a method to remove a dinosaur from the holding pen
+public void removeFromHoldingPen(Dinosaur dinosaur){
+  holdingPen.remove(dinosaur);
+}
 
+// a method to take a dinosaur from the holding pen and put it in an enclosure
+public void moveDinosaur(Enclosure enclosure, Dinosaur dinosaur){
+  removeFromHoldingPen(dinosaur);
+  enclosure.contentsAdd(dinosaur);
+}
 
 
 }

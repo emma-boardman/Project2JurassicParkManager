@@ -42,12 +42,13 @@ public void canAddDinosaurToHoldingPen(){
 
 }
 
-// @Test
-// public void canDealCardToPlayer() {
-//   game.addToCardPile(card1);
-//   game.dealCard(player1, card1);
-//   assertEquals(1, player1.handCount());
-//   assertEquals(0, game.cardPileSize());
-// }
+@Test 
+public void canMoveDinosaurToEnclosure() {
+  enclosureManagement.addToHoldingPen(tRex1);
+  enclosureManagement.moveDinosaur(enclosure1, tRex1);
+  assertEquals(1, enclosure1.enclosureContentsCount());
+  assertEquals(0, enclosureManagement.holdingPenSize());
+}
+
 
 }
