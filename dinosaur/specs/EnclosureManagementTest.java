@@ -34,4 +34,20 @@ public void checkHoldingPenStartsEmpty(){
   assertEquals(0, enclosureManagement.holdingPenSize());
 }
 
+
+@Test
+public void canAddDinosaurToHoldingPen(){
+ enclosureManagement.addToHoldingPen(tRex1);
+ assertEquals(1, enclosureManagement.holdingPenSize());
+
+}
+
+// @Test
+// public void canDealCardToPlayer() {
+//   game.addToCardPile(card1);
+//   game.dealCard(player1, card1);
+//   assertEquals(1, player1.handCount());
+//   assertEquals(0, game.cardPileSize());
+// }
+
 }

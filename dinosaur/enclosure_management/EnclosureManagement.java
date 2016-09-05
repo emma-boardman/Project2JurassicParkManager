@@ -21,6 +21,11 @@ public int holdingPenSize() {
   return holdingPen.size();
 }
 
+// a method to add a dinosaur to the holding pen
+public void addToHoldingPen(Dinosaur dinosaur){
+  holdingPen.add(dinosaur);
+}
+
 
 
 
