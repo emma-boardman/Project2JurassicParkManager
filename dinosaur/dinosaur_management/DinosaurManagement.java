@@ -13,20 +13,25 @@ ArrayList<Enclosure> enclosures;
 ArrayList<Dinosaur> holdingPen;
 
 
-
-
 public DinosaurManagement(DinosaurFactory dinosaurFactory){
     this.dinosaurFactory= dinosaurFactory;
     this.encloures = new ArrayList<Enclosure>;
     this.holdingPen = new ArrayList<Dinosaur>;
   }     
-  // this passes the factory into the constructor
 
+
+
+// a method to create a new dinosaur 
 public Dinosaur addDinosaur(String species){
   Dinosaur dinosaur;
   dinosaur = dinosaurFactory.createDinosaur(species);
   return dinosaur;
 }
+
+
+
+
+
 
 
 // by replacing the new operator with the crate method, avoids concrete instatiations in this class. 
