@@ -6,12 +6,13 @@ import behaviours.*;
 
 public class DinosaurManagementTest {
 
-DinosaurFactory = dinosaurFactory;
+DinosaurFactory dinosaurFactory;
 
 @Test
 public void canCreateNewDinosaur(){
-  Dinosaur dinosaur = createDinosaur("Trex");
-  AssertNotNull(dinosaur);
+  Dinosaur dinosaur = dinosaurFactory.createDinosaur("Trex");
+  AssertEquals("RAWR.", dinosaur.makeNoise);
+}
 }
 
 

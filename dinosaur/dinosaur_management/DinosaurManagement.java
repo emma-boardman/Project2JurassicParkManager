@@ -13,7 +13,7 @@ DinosaurFactory dinosaurFactory;
 
 
 public DinosaurManagement(DinosaurFactory dinosaurFactory){
-    this.dinosaurFactory= dinosaurFactory);
+    this.dinosaurFactory= dinosaurFactory;
   }     
   // this passes the factory into the constructor
 

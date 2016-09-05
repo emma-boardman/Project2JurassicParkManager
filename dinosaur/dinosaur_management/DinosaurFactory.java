@@ -4,9 +4,10 @@ import behaviours.*;
 public class DinosaurFactory {
 
 //this class encapsulates the object creation for all dinosaurs 
+Dinosaur dinosaur;
 
 public Dinosaur createDinosaur(String species){
-  Dinosaur dinosaur;
+  this.dinosaur = dinosaur;
 
   if(species.equals("Trex")){
     dinosaur = new TRex();
