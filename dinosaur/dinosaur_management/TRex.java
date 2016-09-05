@@ -11,3 +11,5 @@ public TRex() {
  
 
 }
+
+//can change the attributes of the Trex here

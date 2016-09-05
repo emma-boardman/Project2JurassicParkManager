@@ -1,7 +1,7 @@
 package dinosaur_management;
 import behaviours.*;
 
-public class Dinosaur{
+public class Dinosaur implements Enclosable{
 
   public NoiseBehaviour noiseBehaviour;
   public EatingBehaviour eatingBehaviour;

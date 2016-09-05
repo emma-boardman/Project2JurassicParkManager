@@ -17,3 +17,4 @@ protected Dinosaur createDinosaur(String species){Dinosaur dinosaur = null;
 
 }
 
+//creates the actual instance of each new dinosaur. to add a new dinosaur, someone has to edit this file. 
