@@ -9,6 +9,7 @@ public class DinosaurManagement {
 // if i added an if statement in this file, this code would have to be modified everytime a new species of dinosaur was introduced. that would be bad.
 
 DinosaurFactory dinosaurFactory;
+TRex trex;
 
 
 
@@ -17,8 +18,6 @@ public DinosaurManagement(DinosaurFactory dinosaurFactory){
    
   }     
 
-
-
 // a method to create a new dinosaur 
 public Dinosaur addDinosaur(String species){
   Dinosaur dinosaur;
@@ -26,7 +25,9 @@ public Dinosaur addDinosaur(String species){
   return dinosaur;
 }
 
+// a method to feed a dinosaur
 
+// a method to tranquilise a dinosaur
 
 
 
