@@ -1,10 +1,10 @@
-public class AdultTicket extends Ticket {
+public class AdultTicket implements Ticket {
 
-  public AdultTicket() {
-    description = "Ticket for visitors aged between 13 and 60";
+  public String getDescription() {
+     return "Ticket for visitors aged between 13 and 60";
+   }
 
-    public double cost(){
+    public double getCost(){
       return 19.99;
     }
   }
-}

@@ -1,9 +1,11 @@
-public class KidsTicket extends Ticket {
-  public KidsTicket(){
-    description = "For visitors 12 and under";
+public class KidsTicket implements Ticket {
 
-    public double cost(){
+  public String getDescription(){
+    return "For visitors 12 and under";
+  } 
+
+    public double getCost(){
       return 10.99;
     }
-  }
+  
 }

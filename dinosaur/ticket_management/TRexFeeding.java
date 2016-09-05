@@ -1,15 +1,16 @@
 public class TRexFeeding extends Decorator {
+
   Ticket ticket;
 
   public TRexFeeding(Ticket ticket){
-    this.ticket = ticket;
+    super(newTicket);
   }
 
-  public String getDescription() {
-    return ticket.getDescription() + ", T-Rex Feeding Show";
-  }
+  public String getDescription(){
+    return tempTicket.getDescription() + ", T-Rex Feeding" ;
+   }
 
-  public double cost() {
-    return 5.99 + ticket.cost();
-  }
+   public double getCost(){
+    return tempTicket.getCost() + 5.99;
+   }
 }
