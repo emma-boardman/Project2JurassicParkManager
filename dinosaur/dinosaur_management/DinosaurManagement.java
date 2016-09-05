@@ -9,14 +9,12 @@ public class DinosaurManagement {
 // if i added an if statement in this file, this code would have to be modified everytime a new species of dinosaur was introduced. that would be bad.
 
 DinosaurFactory dinosaurFactory;
-ArrayList<Enclosure> enclosures;
-ArrayList<Dinosaur> holdingPen;
+
 
 
 public DinosaurManagement(DinosaurFactory dinosaurFactory){
     this.dinosaurFactory= dinosaurFactory;
-    this.encloures = new ArrayList<Enclosure>;
-    this.holdingPen = new ArrayList<Dinosaur>;
+   
   }     
 
 

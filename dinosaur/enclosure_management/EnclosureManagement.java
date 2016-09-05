@@ -11,7 +11,7 @@ ArrayList<Dinosaur> holdingPen;
 
 
 public EnclosureManagement(){
-    this.enclosure = new ArrayList<Enclosure>();
+    this.enclosures = new ArrayList<Enclosure>();
     this.holdingPen = new ArrayList<Dinosaur>();
   }     
 
