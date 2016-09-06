@@ -1,10 +1,12 @@
 package ticket_management;
-
+import java.util.*;
 
 public class TicketManagement{
 
 TicketFactory ticketFactory;
 ArrayList<Ticket> ticketsInOrder;
+Ticket ticket;
+
 
 
 public TicketManagement(TicketFactory ticketFactory){
@@ -19,12 +21,12 @@ public Ticket createTicket(String type){
   return ticket;
 }
 
-public Order createMultipleTicketOrders(String type, int num){
+public int createMultipleTicketOrders(String type, int num){
   do {
-  ticket = createTicket("Adult");
+  ticket = createTicket(type);
   ticketsInOrder.add(ticket);
  } while(num >= 0);
- return tickets.size(); }
+ return ticketsInOrder.size(); }
 
 
 }
@@ -103,5 +105,3 @@ public Order createMultipleTicketOrders(String type, int num){
 
     // requiredSpaceInMetres = 60;
   
-
-}
