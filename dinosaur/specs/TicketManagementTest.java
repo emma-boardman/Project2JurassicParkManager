@@ -6,8 +6,9 @@ import java.util.*;
 
 public class TicketManagementTest {
 
-  TicketManagement ticketManagement;
-  Ticket ticket;
+
+
+
 
 
     @Test
@@ -39,7 +40,8 @@ public class TicketManagementTest {
     @Test
     public void canCreateOrderofMultipleTickets(){
       TicketFactory ticketFactory = new TicketFactory();
-      assertEquals(4, ticketManagement.createMultipleTicketOrders("Adult", 4));
+      TicketManagement ticketManagement = new TicketManagement(ticketFactory);
+       assertEquals(4, ticketManagement.createMultipleTicketOrders("Adult", 4));
     }
 
     }

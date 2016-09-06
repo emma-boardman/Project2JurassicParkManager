@@ -10,8 +10,9 @@ Ticket ticket;
 
 
 public TicketManagement(TicketFactory ticketFactory){
-    this.ticketFactory= ticketFactory;
-
+    this.ticketFactory = ticketFactory;
+    this.ticketsInOrder = new ArrayList<Ticket>();
+    this.ticket = ticket;
   }     
 
 
@@ -23,9 +24,10 @@ public Ticket createTicket(String type){
 
 public int createMultipleTicketOrders(String type, int num){
   do {
-  ticket = createTicket(type);
+  Ticket ticket = createTicket(type);
   ticketsInOrder.add(ticket);
- } while(num >= 0);
+  num -= 1;
+ } while(num >= 1);
  return ticketsInOrder.size(); }
 
 
