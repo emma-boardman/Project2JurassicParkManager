@@ -4,10 +4,12 @@ package ticket_management;
 public class TicketManagement{
 
 TicketFactory ticketFactory;
+ArrayList<Ticket> ticketsInOrder;
 
 
 public TicketManagement(TicketFactory ticketFactory){
     this.ticketFactory= ticketFactory;
+
   }     
 
 
@@ -17,9 +19,17 @@ public Ticket createTicket(String type){
   return ticket;
 }
 
+public Order createMultipleTicketOrders(String type, int num){
+  do {
+  ticket = createTicket("Adult");
+  ticketsInOrder.add(ticket);
+ } while(num >= 0);
+ return tickets.size(); }
 
-// // a method to create a new dinosaur 
-//   // imagining that the type could be selected from the dropdown menu
+
+}
+
+
 // public Ticket buyTicket(String type, int num){
 //   Ticket ticket;
 //   Tickets tickets = new Tickets();

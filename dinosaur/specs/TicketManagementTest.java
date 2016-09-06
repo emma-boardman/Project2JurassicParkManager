@@ -32,4 +32,11 @@ public class TicketManagementTest {
 
     }
 
+    @Test
+    public void canCreateOrderofMultipleTickets(){
+      TicketFactory ticketFactory = new TicketFactory();
+      ticket_management.createMultipleTicketOrders(4);
+      assertEquals(4, ticket_management.order_count);
+    }
+
     }
