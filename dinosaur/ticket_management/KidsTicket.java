@@ -1,3 +1,5 @@
+package ticket_management;
+
 public class KidsTicket implements Ticket {
 
   public String getDescription(){

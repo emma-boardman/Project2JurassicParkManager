@@ -1,3 +1,5 @@
+package ticket_management;
+
 public abstract class Decorator implements Ticket {
 
   protected Ticket tempTicket;

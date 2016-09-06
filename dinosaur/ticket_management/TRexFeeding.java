@@ -1,8 +1,10 @@
+package ticket_management;
+
 public class TRexFeeding extends Decorator {
 
   Ticket ticket;
 
-  public TRexFeeding(Ticket ticket){
+  public TRexFeeding(Ticket newTicket){
     super(newTicket);
   }
 
