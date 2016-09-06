@@ -26,7 +26,8 @@ public int enclosureContentsCount(){
   return enclosure_contents.size();
 }
 
-public void contentsAdd(Enclosable enclosable){enclosure_contents.add(enclosable);
+public void contentsAdd(Enclosable enclosable){
+  enclosure_contents.add(enclosable);
 }
 
 public void contentsClear() {
