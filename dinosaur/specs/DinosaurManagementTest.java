@@ -22,6 +22,9 @@ public void canCreateNewDinosaur(){
   
 }
 
+
+
+
 // if the compile thinks that the variable is a Dinosaur, it can only do what the dinosaur can do.
 // casting gives us access to all the methods on the type
 }

@@ -1,6 +1,7 @@
 package dinosaur_management;
 import behaviours.*;
-
+import enclosure_management.*;
+import java.util.*;
 
 
 public class DinosaurManagement {
@@ -10,11 +11,15 @@ public class DinosaurManagement {
 
 DinosaurFactory dinosaurFactory;
 TRex trex;
+ArrayList<Enclosure> enclosures;
+ArrayList<Enclosable> enclosure_contents;
 
-
+// each enclosure in the array list contains an array list of it's contents. want to access the properties of the contents in each enclosure. 
 
 public DinosaurManagement(DinosaurFactory dinosaurFactory){
     this.dinosaurFactory= dinosaurFactory;
+    // this.enclosures = enclosures;
+    // this.enclosure_contents = enclosure_contents;
    
   }     
 
@@ -24,6 +29,19 @@ public Dinosaur addDinosaur(String species){
   dinosaur = dinosaurFactory.createDinosaur(species);
   return dinosaur;
 }
+
+// public String feedCarnivores(){
+// for( dinosaur : enclosure_contents){
+//   if(dinosaur.diet() == "Carnivore"){
+//     return "Lowering cow into paddock";
+//   else if(dinosaur.diet() == "Herbivore"){
+//     return "Placing shrubbery in paddock";
+//   }
+//   }
+// }
+
+}
+
 
 // a method to feed a dinosaur
 
@@ -54,5 +72,3 @@ public Dinosaur addDinosaur(String species){
 
 
 
-
-}
