@@ -34,15 +34,18 @@ public Dinosaur addDinosaur(String species){
   return dinosaur;
 }
 
-// public String feedCarnivores(){
-// for( dinosaur : enclosure_contents){
-//   if(dinosaur.diet() == "Carnivore"){
-//     return "Lowering cow into paddock";
-//   else if(dinosaur.diet() == "Herbivore"){
-//     return "Placing shrubbery in paddock";
-//   }
-//   }
-// }
+public String feedEnclosureContents(){
+for( Enclosure enclosure : enclosures){
+  for ( Enclosable each_enclosure_content :enclosure_contents){
+  if(dinosaur.confirmDiet() == "Carnivore"){
+    return "Lowering cow into paddock";}
+  else if(dinosaur.confirmDiet() == "Herbivore"){
+    return "Placing shrubbery in paddock";
+  }
+  }
+}
+
+}
 
 }
 
