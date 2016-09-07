@@ -6,6 +6,7 @@ public class Dinosaur implements Enclosable{
   // public String dinosaurName;
   public NoiseBehaviour noiseBehaviour;
   public EatingBehaviour eatingBehaviour;
+  public DietaryRequirements dietaryRequirements;
   // public int requiredSpaceInMetres;
   // dinosaur doesn't care what noise is, just knows it's available to all it's subclasses 
 
@@ -27,6 +28,10 @@ public class Dinosaur implements Enclosable{
 
   public String eatFood(){
      return eatingBehaviour.eat();
+  }
+
+  public String confirmDiet(){
+     return dietaryRequirements.diet();
   }
 
   public void setEatingBehaviour(EatingBehaviour newEatingBehaviour){

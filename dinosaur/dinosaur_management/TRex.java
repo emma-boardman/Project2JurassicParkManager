@@ -8,6 +8,7 @@ public TRex(){
   super();
   noiseBehaviour = new Roar();
   eatingBehaviour = new SwallowWhole();
+  dietaryRequirements = new Carnivore(); 
   // requiredSpaceInMetres = 60;
 }
  

@@ -30,8 +30,8 @@ public int createMultipleTicketOrders(String type, int num){
  } while(num >= 1);
  return ticketsInOrder.size(); }
 
-
 }
+
 
 
 // public Ticket buyTicket(String type, int num){
