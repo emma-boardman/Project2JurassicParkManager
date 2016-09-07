@@ -1,8 +1,8 @@
 package behaviours;
 
-public class Carnivore {
+public class Carnivore implements DietaryRequirements {
 
   public String diet() {
-    return "Carnivore"l
+    return "Carnivore";
   }
 }

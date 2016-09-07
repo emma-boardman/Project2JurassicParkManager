@@ -22,4 +22,10 @@ public class TRexTest {
     assertEquals(trex.eatFood(),"*gulp*");
   }
 
+
+  @Test
+  public void isCarnivore(){
+    assertEquals(trex.confirmDiet(),"Carnivore");
+  }
+
 }
