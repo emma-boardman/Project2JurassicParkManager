@@ -32,7 +32,7 @@ public void canAddcontents() {
 }
 
 @Test
-public void canKillAllContents() {
+public void canClearAllContents() {
  enclosureOne.contentsAdd(trexOne);
  assertEquals(1, enclosureOne.enclosureContentsCount());
   enclosureOne.contentsClear();

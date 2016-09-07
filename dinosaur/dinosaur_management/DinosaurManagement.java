@@ -37,6 +37,7 @@ public Dinosaur addDinosaur(String species){
   return dinosaur;
 }
 
+// a method to feed each dinosaur in each enclosure based on their dietary requirements
 public String feedEnclosureContents(){
 for( Enclosure enclosure : enclosures){
   for ( Enclosable each_enclosure_content :enclosure_contents){
@@ -45,41 +46,33 @@ for( Enclosure enclosure : enclosures){
     else if(dinosaur.confirmDiet().equals("Herbivore")){
       return "Placing shrubbery in paddock";
     }
-
   }
   return dinosaur.eatFood();
 }
 return "Feeding Complete";
 }
+
+
 }
 
 
-// a method to feed a dinosaur
+
+
+
+
+// a method to feed a dinosaur - done.
+
+//  a method to add a dinosaur to the zoo - done.
+
+// a method to add the dinosaur to an enclosure - done.
+
+// a method to move the dinosaur between enclosures - done.
 
 // a method to tranquilise a dinosaur
 
+// a method to view all current dinosaurs 
 
-
-
-
-// by replacing the new operator with the crate method, avoids concrete instatiations in this class. 
-
-
-
-
-//   method to add a dinosaur to the zoo
-// }
-
-  // method to view all current dinosaurs 
-
-  // method to view all current enclosures 
-
-  // method to add the dinosaur to an enclosure
-
-  // method to move the dinosaur between enclosures 
-
-  // method to tranquilise dinosaur
-
+// a method to view all current enclosures 
 
 
 

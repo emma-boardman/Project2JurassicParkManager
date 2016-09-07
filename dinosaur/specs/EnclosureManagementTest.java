@@ -64,12 +64,27 @@ public void canFeedCarnivores(){
   enclosureManagement.moveDinosaur(enclosure2, tRex3);
   assertEquals(1, enclosure1.enclosureContentsCount());
   assertEquals(2, enclosure2.enclosureContentsCount());
-  
-
 
   // each enclosure is an array list containing enclosable contents. at this point, enclosure 1 contains 1 trex, and enlosure 2 contains 2. 
   
   // how do i test for this? 
 }
+
+// @Test 
+// public void canClearAllContentsFromManagementClass(){
+//  enclosure1.contentsAdd(tRex1);
+//  enclosure1.contentsAdd(tRex2);
+//  enclosure2.contentsAdd(tRex3);
+
+//  assertEquals(2, enclosure1.enclosureContentsCount());
+//  assertEquals(1, enclosure1.enclosureContentsCount());
+
+//   enclosure1.contentsClear();
+//   assertEquals(0, enclosure1.enclosureContentsCount());
+
+
+//   enclosure2.contentsClear();
+//   assertEquals(0, enclosure1.enclosureContentsCount());
+// }
 
 }

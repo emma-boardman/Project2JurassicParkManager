@@ -10,11 +10,15 @@ public class EnclosureManagement {
 
 public ArrayList<Enclosure> enclosures;
 public ArrayList<Dinosaur> holdingPen;
+ArrayList<Enclosable> enclosure_contents;
+Enclosure enclosure;
 
 
 public EnclosureManagement(){
     this.enclosures = new ArrayList<Enclosure>();
     this.holdingPen = new ArrayList<Dinosaur>();
+    ArrayList<Enclosable> enclosure_contents = enclosure.enclosure_contents;
+
   }     
 
 
@@ -39,5 +43,10 @@ public void moveDinosaur(Enclosure enclosure, Dinosaur dinosaur){
   enclosure.contentsAdd(dinosaur);
 }
 
+public void cutPowerToAllEnclosuresThusAllowingAnimalsToStampede(){
+  for( Enclosure enclosure : enclosures){
+    enclosure_contents.clear();}
+
+}
 
 }
