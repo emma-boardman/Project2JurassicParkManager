@@ -13,6 +13,9 @@ DinosaurFactory dinosaurFactory;
 TRex trex;
 EnclosureManagement enclosure_management;
 Enclosure enclosure;
+ArrayList<Enclosure> enclosures;
+ArrayList<Enclosable> enclosure_contents;
+Dinosaur dinosaur;
 
 // each enclosure in the array list contains an array list of it's contents. want to access the properties of the contents in each enclosure. 
 
@@ -37,16 +40,17 @@ public Dinosaur addDinosaur(String species){
 public String feedEnclosureContents(){
 for( Enclosure enclosure : enclosures){
   for ( Enclosable each_enclosure_content :enclosure_contents){
-  if(dinosaur.confirmDiet() == "Carnivore"){
-    return "Lowering cow into paddock";}
-  else if(dinosaur.confirmDiet() == "Herbivore"){
-    return "Placing shrubbery in paddock";
-  }
-  }
-}
+  if(dinosaur.confirmDiet().equals("Carnivore")) {
+    return "Lowering cow into paddock"; }
+    else if(dinosaur.confirmDiet().equals("Herbivore")){
+      return "Placing shrubbery in paddock";
+    }
 
+  }
+  return dinosaur.eatFood();
 }
-
+return "Feeding Complete";
+}
 }
 
 
