@@ -6,8 +6,8 @@ import dinosaur_management.*;
 
 public class EnclosureManagement {
 
-ArrayList<Enclosure> enclosures;
-ArrayList<Dinosaur> holdingPen;
+public ArrayList<Enclosure> enclosures;
+public ArrayList<Dinosaur> holdingPen;
 
 
 public EnclosureManagement(){

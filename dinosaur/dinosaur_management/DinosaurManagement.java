@@ -11,13 +11,17 @@ public class DinosaurManagement {
 
 DinosaurFactory dinosaurFactory;
 TRex trex;
-ArrayList<Enclosure> enclosures;
-ArrayList<Enclosable> enclosure_contents;
+EnclosureManagement enclosure_management;
+Enclosure enclosure;
 
 // each enclosure in the array list contains an array list of it's contents. want to access the properties of the contents in each enclosure. 
 
 public DinosaurManagement(DinosaurFactory dinosaurFactory){
     this.dinosaurFactory= dinosaurFactory;
+    EnclosureManagement enclosure_management = new EnclosureManagement();
+    ArrayList<Enclosure> enclosures = enclosure_management.enclosures;
+    ArrayList<Enclosable> enclosure_contents = enclosure.enclosure_contents;
+
     // this.enclosures = enclosures;
     // this.enclosure_contents = enclosure_contents;
    

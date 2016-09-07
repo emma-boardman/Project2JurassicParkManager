@@ -30,6 +30,7 @@ public void before(){
   stegosaurus2 = new Stegosaurus();
   enclosureManagement = new EnclosureManagement();
 
+
 }
 
 @Test 
@@ -63,6 +64,9 @@ public void canFeedCarnivores(){
   enclosureManagement.moveDinosaur(enclosure2, tRex3);
   assertEquals(1, enclosure1.enclosureContentsCount());
   assertEquals(2, enclosure2.enclosureContentsCount());
+  
+
+
   // each enclosure is an array list containing enclosable contents. at this point, enclosure 1 contains 1 trex, and enlosure 2 contains 2. 
   
   // how do i test for this? 

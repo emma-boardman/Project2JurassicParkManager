@@ -7,7 +7,7 @@ public class Enclosure {
 
 String name;
 int sizeInMetres; 
-ArrayList<Enclosable> enclosure_contents;
+public ArrayList<Enclosable> enclosure_contents;
 
 
 public Enclosure(String name, int sizeInMetres){
